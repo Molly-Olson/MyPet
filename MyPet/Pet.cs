@@ -10,15 +10,15 @@ namespace MyPet
     {
         public int Health;
         public string Name;
-        //public Room location;
+        public Room location;
         public List<Item> inventory = new List<Item>();
 
-        public Pet() : base(FSM.StateMachine.idle)
+        public Pet() : base(FSM.State.idle)
         {
         }
         public void Sleep()
         {
-            this.transition(FSM.StateMachine.sleeping);
+            this.transition(FSM.State.sleeping);
         }
     }
 }

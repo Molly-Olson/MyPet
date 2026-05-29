@@ -11,6 +11,9 @@ namespace MyPet.FSM
         idle,
         sitting,
         eating,
+        pouting,
+        playing,
+        highFiving,
         sleeping,
         dead
     }
