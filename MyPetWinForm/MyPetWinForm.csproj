@@ -12,4 +12,11 @@
     <ProjectReference Include="..\MyPet\MyPet.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\Images\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Images\%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>

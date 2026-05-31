@@ -6,11 +6,11 @@ namespace TestPet
 {
     public class Tests
     {
-        MyPet.Pet pet;
+        MyPet.Tiger pet;
         [SetUp]
         public void Setup()
         {
-            pet = new MyPet.Pet();
+            pet = new MyPet.Tiger();
         }
 
         [Test]

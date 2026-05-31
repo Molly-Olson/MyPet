@@ -11,4 +11,11 @@
     <PackageReference Include="Stateless" Version="5.20.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\Images\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Images\%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>
